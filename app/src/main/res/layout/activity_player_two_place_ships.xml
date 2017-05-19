@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/row1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/black"
+        app1:layout_constraintLeft_toLeftOf="parent"
+        app1:layout_constraintRight_toRightOf="parent"
+        app1:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/row2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/black"
+        app1:layout_constraintLeft_toLeftOf="@+id/row1"
+        app1:layout_constraintRight_toRightOf="@+id/row1"
+        app1:layout_constraintTop_toBottomOf="@+id/row1" />
+
+    <View
+        android:id="@+id/row3"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/black"
+        app1:layout_constraintLeft_toLeftOf="@+id/row1"
+        app1:layout_constraintRight_toRightOf="@+id/row1"
+        app1:layout_constraintTop_toBottomOf="@+id/row2" />
+
+    <View
+        android:id="@+id/row4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/black"
+        app1:layout_constraintLeft_toLeftOf="@+id/row1"
+        app1:layout_constraintRight_toRightOf="@+id/row1"
+        app1:layout_constraintTop_toBottomOf="@+id/row3" />
+
+    <View
+        android:id="@+id/row5"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/black"
+        app1:layout_constraintLeft_toLeftOf="@+id/row1"
+        app1:layout_constraintRight_toRightOf="@+id/row1"
+        app1:layout_constraintTop_toBottomOf="@+id/row4" />
+
+    <View
+        android:id="@+id/row6"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/black"
+        app1:layout_constraintLeft_toLeftOf="@+id/row1"
+        app1:layout_constraintRight_toRightOf="@+id/row1"
+        app1:layout_constraintTop_toBottomOf="@+id/row5" />
+
+    <View
+        android:id="@+id/column1"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        app1:layout_constraintBottom_toBottomOf="@id/row6"
+        app1:layout_constraintLeft_toLeftOf="@id/row1"
+        app1:layout_constraintTop_toTopOf="@id/row1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/column2"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="68dp"
+        android:background="@android:color/black"
+        app1:layout_constraintBottom_toBottomOf="@id/column1"
+        app1:layout_constraintLeft_toLeftOf="@id/row1"
+        app1:layout_constraintTop_toTopOf="@id/column1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/column3"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="68dp"
+        android:background="@android:color/black"
+        app1:layout_constraintBottom_toBottomOf="@id/column1"
+        app1:layout_constraintLeft_toRightOf="@id/column2"
+        app1:layout_constraintTop_toTopOf="@id/column1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/column4"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="68dp"
+        android:background="@android:color/black"
+        app1:layout_constraintBottom_toBottomOf="@id/column1"
+        app1:layout_constraintLeft_toRightOf="@id/column3"
+        app1:layout_constraintTop_toTopOf="@id/column1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/column5"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="68dp"
+        android:background="@android:color/black"
+        app1:layout_constraintBottom_toBottomOf="@id/column1"
+        app1:layout_constraintLeft_toRightOf="@id/column4"
+        app1:layout_constraintTop_toTopOf="@id/column1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/column6"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        app1:layout_constraintBottom_toBottomOf="@id/row6"
+        app1:layout_constraintRight_toRightOf="@id/row1"
+        app1:layout_constraintTop_toTopOf="@id/row1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/box1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row2"
+        app1:layout_constraintLeft_toRightOf="@+id/column1"
+        app1:layout_constraintRight_toLeftOf="@id/column2"
+        app1:layout_constraintTop_toBottomOf="@id/row1" />
+
+    <TextView
+        android:id="@+id/box2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row2"
+        app1:layout_constraintLeft_toRightOf="@+id/column2"
+        app1:layout_constraintRight_toLeftOf="@id/column3"
+        app1:layout_constraintTop_toBottomOf="@id/row1" />
+
+    <TextView
+        android:id="@+id/box3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row2"
+        app1:layout_constraintLeft_toRightOf="@+id/column3"
+        app1:layout_constraintRight_toLeftOf="@id/column4"
+        app1:layout_constraintTop_toBottomOf="@id/row1" />
+
+    <TextView
+        android:id="@+id/box4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row2"
+        app1:layout_constraintLeft_toRightOf="@+id/column4"
+        app1:layout_constraintRight_toLeftOf="@id/column5"
+        app1:layout_constraintTop_toBottomOf="@id/row1" />
+
+    <TextView
+        android:id="@+id/box5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row2"
+        app1:layout_constraintLeft_toRightOf="@+id/column5"
+        app1:layout_constraintRight_toLeftOf="@id/column6"
+        app1:layout_constraintTop_toBottomOf="@id/row1" />
+
+    <TextView
+        android:id="@+id/box6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row3"
+        app1:layout_constraintLeft_toRightOf="@+id/column1"
+        app1:layout_constraintRight_toLeftOf="@id/column2"
+        app1:layout_constraintTop_toBottomOf="@id/row2" />
+
+    <TextView
+        android:id="@+id/box7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row3"
+        app1:layout_constraintLeft_toRightOf="@+id/column2"
+        app1:layout_constraintRight_toLeftOf="@id/column3"
+        app1:layout_constraintTop_toBottomOf="@id/row2" />
+
+    <TextView
+        android:id="@+id/box8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row3"
+        app1:layout_constraintLeft_toRightOf="@+id/column3"
+        app1:layout_constraintRight_toLeftOf="@id/column4"
+        app1:layout_constraintTop_toBottomOf="@id/row2" />
+
+    <TextView
+        android:id="@+id/box9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row3"
+        app1:layout_constraintLeft_toRightOf="@+id/column4"
+        app1:layout_constraintRight_toLeftOf="@id/column5"
+        app1:layout_constraintTop_toBottomOf="@id/row2" />
+
+    <TextView
+        android:id="@+id/box10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row3"
+        app1:layout_constraintLeft_toRightOf="@+id/column5"
+        app1:layout_constraintRight_toLeftOf="@id/column6"
+        app1:layout_constraintTop_toBottomOf="@id/row2" />
+
+    <TextView
+        android:id="@+id/box11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row4"
+        app1:layout_constraintLeft_toRightOf="@+id/column1"
+        app1:layout_constraintRight_toLeftOf="@id/column2"
+        app1:layout_constraintTop_toBottomOf="@id/row3" />
+
+    <TextView
+        android:id="@+id/box12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row4"
+        app1:layout_constraintLeft_toRightOf="@+id/column2"
+        app1:layout_constraintRight_toLeftOf="@id/column3"
+        app1:layout_constraintTop_toBottomOf="@id/row3" />
+
+    <TextView
+        android:id="@+id/box13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row4"
+        app1:layout_constraintLeft_toRightOf="@+id/column3"
+        app1:layout_constraintRight_toLeftOf="@id/column4"
+        app1:layout_constraintTop_toBottomOf="@id/row3" />
+
+    <TextView
+        android:id="@+id/box14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row4"
+        app1:layout_constraintLeft_toRightOf="@+id/column4"
+        app1:layout_constraintRight_toLeftOf="@id/column5"
+        app1:layout_constraintTop_toBottomOf="@id/row3" />
+
+    <TextView
+        android:id="@+id/box15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row4"
+        app1:layout_constraintLeft_toRightOf="@+id/column5"
+        app1:layout_constraintRight_toLeftOf="@id/column6"
+        app1:layout_constraintTop_toBottomOf="@id/row3" />
+
+    <TextView
+        android:id="@+id/box16"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row5"
+        app1:layout_constraintLeft_toRightOf="@+id/column1"
+        app1:layout_constraintRight_toLeftOf="@id/column2"
+        app1:layout_constraintTop_toBottomOf="@id/row4" />
+
+    <TextView
+        android:id="@+id/box17"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row5"
+        app1:layout_constraintLeft_toRightOf="@+id/column2"
+        app1:layout_constraintRight_toLeftOf="@id/column3"
+        app1:layout_constraintTop_toBottomOf="@id/row4" />
+
+    <TextView
+        android:id="@+id/box18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row5"
+        app1:layout_constraintLeft_toRightOf="@+id/column3"
+        app1:layout_constraintRight_toLeftOf="@id/column4"
+        app1:layout_constraintTop_toBottomOf="@id/row4" />
+
+    <TextView
+        android:id="@+id/box19"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row5"
+        app1:layout_constraintLeft_toRightOf="@+id/column4"
+        app1:layout_constraintRight_toLeftOf="@id/column5"
+        app1:layout_constraintTop_toBottomOf="@id/row4" />
+
+    <TextView
+        android:id="@+id/box20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row5"
+        app1:layout_constraintLeft_toRightOf="@+id/column5"
+        app1:layout_constraintRight_toLeftOf="@id/column6"
+        app1:layout_constraintTop_toBottomOf="@id/row4" />
+
+    <TextView
+        android:id="@+id/box21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row6"
+        app1:layout_constraintLeft_toRightOf="@+id/column1"
+        app1:layout_constraintRight_toLeftOf="@id/column2"
+        app1:layout_constraintTop_toBottomOf="@id/row5" />
+
+    <TextView
+        android:id="@+id/box22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row6"
+        app1:layout_constraintLeft_toRightOf="@+id/column2"
+        app1:layout_constraintRight_toLeftOf="@id/column3"
+        app1:layout_constraintTop_toBottomOf="@id/row5" />
+
+    <TextView
+        android:id="@+id/box23"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row6"
+        app1:layout_constraintLeft_toRightOf="@+id/column3"
+        app1:layout_constraintRight_toLeftOf="@id/column4"
+        app1:layout_constraintTop_toBottomOf="@id/row5" />
+
+    <TextView
+        android:id="@+id/box24"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row6"
+        app1:layout_constraintLeft_toRightOf="@+id/column4"
+        app1:layout_constraintRight_toLeftOf="@id/column5"
+        app1:layout_constraintTop_toBottomOf="@id/row5" />
+
+    <TextView
+        android:id="@+id/box25"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app1:layout_constraintBottom_toTopOf="@+id/row6"
+        app1:layout_constraintLeft_toRightOf="@+id/column5"
+        app1:layout_constraintRight_toLeftOf="@id/column6"
+        app1:layout_constraintTop_toBottomOf="@id/row5" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Finish"
+        app1:layout_constraintBottom_toBottomOf="parent"
+        app1:layout_constraintLeft_toLeftOf="@id/column3"
+        app1:layout_constraintTop_toBottomOf="@+id/directions"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Please place one ship of length 4, 3, and 2 on the grid above by highlighting boxes of your choice"
+        android:textColor="@color/tw__composer_black"
+        android:textSize="20dp"
+        app1:layout_constraintBottom_toTopOf="@+id/finish"
+        app1:layout_constraintLeft_toLeftOf="parent"
+        app1:layout_constraintRight_toRightOf="parent"
+        app1:layout_constraintTop_toBottomOf="@id/row6"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
